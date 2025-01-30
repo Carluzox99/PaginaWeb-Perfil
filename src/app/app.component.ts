@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [AboutComponent, ProjectsComponent, ContactComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: [] // O verifica si el archivo existe
 })
 export class AppComponent {
   title = 'PaginaWeb-Perfil';

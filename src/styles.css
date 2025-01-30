@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos generales */
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+}
+
+/* Estilos para la barra de navegación */
+.custom-navbar {
+  /* Puedes añadir estilos específicos para la barra de navegación aquí */
+}
+
+.navbar .navbar-nav .nav-link {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.custom-nav .custom-link:hover {
+  color: darkblue; /* Color al pasar el ratón por encima */
+}
+
+/* Estilos para la sección hero */
+.hero {
+  position: relative;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
