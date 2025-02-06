@@ -4,12 +4,12 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root-unique',  // Cambia este selector para que sea único
   standalone: true,
   imports: [AboutComponent, ProjectsComponent, ContactComponent],
   templateUrl: './app.component.html',
-  styleUrls: [] // O verifica si el archivo existe
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PaginaWeb-Perfil';
+  title = 'PaginaWebPerfil';
 }

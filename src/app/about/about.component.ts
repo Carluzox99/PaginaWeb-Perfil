@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-about-unique',  // Cambia este selector para que sea único
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
-  standalone: true
+  styleUrls: ['./about.component.css']
 })
 export class AboutComponent { }
